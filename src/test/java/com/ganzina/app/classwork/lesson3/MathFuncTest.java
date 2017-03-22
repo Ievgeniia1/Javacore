@@ -13,7 +13,6 @@ public class MathFuncTest {
     int a = 1;
     int b = 2;
     MathFunc mathFunc = new MathFunc();
-    mathFunc.multiply(a,b);
     int actualResult = mathFunc.multiply(a,b);
     int expectedResult = 2;
     Assert.assertEquals(expectedResult,actualResult);
@@ -24,17 +23,11 @@ public class MathFuncTest {
         int c=5;
         int d=3;
         MathFunc mathFunc = new MathFunc();
-        mathFunc.sum(c,d);
         int actualResult = mathFunc.sum(c,d);
         int expectedResult = 8;
         Assert.assertEquals(expectedResult,actualResult);
     }
 
-    @Ignore("Not ready yet")
-    @Test(timeout=1000)
-    public void infinityTest(){
-        while (true);
-    }
 
 }
 

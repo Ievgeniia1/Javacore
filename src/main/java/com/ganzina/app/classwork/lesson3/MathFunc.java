@@ -7,8 +7,7 @@ public class MathFunc {
     public int multiply (int a, int b){
         return a * b;
     }
-    public int sum (int c, int d){
+    public int sum (int c, int d) {
         return c + d;
-
     }
 }
