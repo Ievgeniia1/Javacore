@@ -1,6 +1,7 @@
 package com.ganzina.app.classwork.lesson3;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -28,4 +29,12 @@ public class MathFuncTest {
         int expectedResult = 8;
         Assert.assertEquals(expectedResult,actualResult);
     }
+
+    @Ignore("Not ready yet")
+    @Test(timeout=1000)
+    public void infinityTest(){
+        while (true);
+    }
+
 }
+

@@ -11,6 +11,8 @@
     <maven-compile-version>3.6.1</maven-compile-version>
     <jdk.version>1.8</jdk.version>
     <junit.version>4.12</junit.version>
+    <junit.params.version>1.0.6</junit.params.version>
+
   </properties>
 
   <build>
@@ -37,5 +39,11 @@
       <artifactId>junit</artifactId>
       <version>${junit.version}</version>
     </dependency>
+    <dependency>
+      <groupId>pl.pragmatists</groupId>
+      <artifactId>JUnitParams</artifactId>
+      <version>${junit.params.version}</version>
+    </dependency>
+
   </dependencies>
 </project>
