@@ -18,20 +18,37 @@ public class Lesson4Runner {
         Scanner scn = new Scanner(System.in);
 
         System.out.println("Please enter number of task you would like to run");
-        System.out.println("1 - Check if 3 digits could be the side of right-angled triangle");
+        System.out.println("1 - Check if 3 digits could be the sides of right-angled triangle");
         System.out.println("2 - Define if number is even or odd");
         System.out.println("3 - Define which number from two entered is bigger");
-        int a = scn.nextInt();
+        int input = scn.nextInt();
 
-        if ((a==1)||(a==2)||(a==3))
+        if ((input==1)||(input==2)||(input==3))
 
-            if (a==1)
-                validateTriangle();
-                else
-                if (a==2)
-                    defineEvenOrOdd();
-                else
-                    defineBigger();
+            if (input==1) {
+                System.out.println("Please enter integer length of first triangle side and press Enter");
+                int a = scn.nextInt();
+
+                System.out.println("Please enter integer  length of second triangle side and press Enter");
+                int b = scn.nextInt();
+
+                System.out.println("Please enter integer length of third triangle side and press Enter");
+                int c = scn.nextInt();
+
+                validateTriangle(a,b,c);
+            }
+                else if (input==2){
+                    System.out.println("Please enter integer number to define if it is even or odd and press Enter");
+                    int a = scn.nextInt();
+                    defineEvenOrOdd(a);
+                }
+                else{
+                    System.out.println("Please enter first integer number below");
+                    int a=scn.nextInt();
+                    System.out.println("Please enter second integer number below");
+                    int b=scn.nextInt();
+                    defineBigger(a,b);
+                }
         else
             System.out.println("Wrong input, use only 1, 2, or 3");
 
