@@ -8,9 +8,9 @@ import com.ganzina.app.utils.convertors.PrimitiveConvertor;
 public class PrimitiveConvertorRunner {
     public static void main(String[] args) {
         PrimitiveConvertor name = new PrimitiveConvertor();
-        name.floatToChar();
-        name.intToChar();
-        name.charToInt();
+        name.floatToChar(65);
+        name.intToChar(79);
+        name.charToInt('e');
 
     }
 

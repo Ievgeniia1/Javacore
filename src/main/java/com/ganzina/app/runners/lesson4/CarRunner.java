@@ -1,6 +1,6 @@
 package com.ganzina.app.runners.lesson4;
 
-import com.ganzina.app.classwork.lesson5.Car;
+import com.ganzina.app.classwork.lesson4.Car;
 
 /**
  * Created by Ievgeniia on 3/17/2017.
