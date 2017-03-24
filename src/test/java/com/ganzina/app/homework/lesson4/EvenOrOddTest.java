@@ -1,48 +1,24 @@
 package com.ganzina.app.homework.lesson4;
 
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 /**
  * Created by Ievgeniia on 3/24/2017.
  */
+
+
+
+@RunWith(JUnitParamsRunner.class)
 public class EvenOrOddTest {
     @Test
-    public void naturalOddTest(){
-        int a=3;
+    @FileParameters(value = "src/test/resources/TestEvenOdd.csv", mapper = CsvWithHeaderMapper.class)
+    public void dataProviderTestEvenOdd(int a, boolean expRes) {
         boolean actRes=EvenOrOdd.defineEvenOrOdd(a);
-        boolean expRes=false;
-        Assert.assertEquals(expRes,actRes);
-    }
-
-    @Test
-    public void naturalEvenTest(){
-        int a=2;
-        boolean actRes=EvenOrOdd.defineEvenOrOdd(a);
-        boolean expRes=true;
-        Assert.assertEquals(expRes,actRes);
-    }
-
-    @Test
-    public void zeroTest(){
-        int a=0;
-        boolean actRes=EvenOrOdd.defineEvenOrOdd(a);
-        boolean expRes=true;
-        Assert.assertEquals(expRes,actRes);
-    }
-    @Test
-    public void twoSymbolsTest(){
-        int a=99;
-        boolean actRes=EvenOrOdd.defineEvenOrOdd(a);
-        boolean expRes=false;
-        Assert.assertEquals(expRes,actRes);
-    }
-
-    @Test
-    public void thousandTest(){
-        int a=1000;
-        boolean actRes=EvenOrOdd.defineEvenOrOdd(a);
-        boolean expRes=true;
         Assert.assertEquals(expRes,actRes);
     }
 }

@@ -1,0 +1,9 @@
+a,b,c,expRes
+3,4,5,Your triangle is right-angled
+17,8,15,Your triangle is right-angled
+12,13,5,Your triangle is right-angled
+1,2,10,Such triangle does not exist
+0,2,10,Such triangle does not exist
+0,0,0,Such triangle does not exist
+-5,-5,-5,Such triangle does not exist
+2,2,2,Your triangle is not right-angled
