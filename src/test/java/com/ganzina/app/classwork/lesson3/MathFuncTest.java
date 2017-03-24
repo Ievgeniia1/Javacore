@@ -155,29 +155,4 @@ public class MathFuncTest {
         Assert.assertEquals(expRes,Math.E, 2);
     }
 
-
-
-    @Test
-    public void floatToCharTest(){
-        char expRes='A';
-        PrimitiveConvertor method=new PrimitiveConvertor();
-        Assert.assertEquals(expRes,method.floatToChar());
-    }
-
-
-    @Test
-    public void intToCharTest(){
-        char expRes='O';
-        PrimitiveConvertor method=new PrimitiveConvertor();
-        Assert.assertEquals(expRes,method.intToChar());
-    }
-
-    @Test
-    public void charToInt(){
-        int expRes=101;
-        PrimitiveConvertor method = new PrimitiveConvertor();
-        Assert.assertEquals(expRes,method.charToInt());
-    }
-
-
 }
