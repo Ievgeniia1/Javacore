@@ -8,7 +8,7 @@ import com.ganzina.app.classwork.lesson4.CircleArea;
 public class CircleAreaRunner {
     public static void main(String[] args) {
 
-        CircleArea.calculateBigger();
+        CircleArea.calculateBigger(10,3);
 
     }
 

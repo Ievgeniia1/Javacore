@@ -6,11 +6,10 @@ package com.ganzina.app.classwork.lesson4;
 public class CircleArea {
 
     public static final double PI =3.14d;
-    public static int r1=5;
-    public static int r2=5;
     public static double area1, area2;
 
-    public static void calculateBigger() {
+
+    public static void calculateBigger(int r1,int r2) {
         area1=PI*r1*r1;
         area2=PI*r2*r2;
         if (area1>area2)
