@@ -23,9 +23,8 @@ public class Lesson4Runner {
         System.out.println("3 - Define which number from two entered is bigger");
         int input = scn.nextInt();
 
-        if ((input==1)||(input==2)||(input==3))
-
-            if (input==1) {
+        switch (input) {
+            case 1: {
                 System.out.println("Please enter integer length of first triangle side and press Enter");
                 int a = scn.nextInt();
 
@@ -35,27 +34,28 @@ public class Lesson4Runner {
                 System.out.println("Please enter integer length of third triangle side and press Enter");
                 int c = scn.nextInt();
 
-                validateTriangle(a,b,c);
+                validateTriangle(a, b, c);
+                break;
             }
-                else if (input==2){
-                    System.out.println("Please enter integer number to define if it is even or odd and press Enter");
-                    int a = scn.nextInt();
-                    defineEvenOrOdd(a);
-                }
-                else{
-                    System.out.println("Please enter first integer number below");
-                    int a=scn.nextInt();
-                    System.out.println("Please enter second integer number below");
-                    int b=scn.nextInt();
-                    defineBigger(a,b);
-                }
-        else
-            System.out.println("Wrong input, use only 1, 2, or 3");
+
+            case 2: {
+                System.out.println("Please enter integer number to define if it is even or odd and press Enter");
+                int a = scn.nextInt();
+                defineEvenOrOdd(a);
+                break;
+            }
+
+            case 3: {
+                System.out.println("Please enter first integer number below");
+                int a = scn.nextInt();
+                System.out.println("Please enter second integer number below");
+                int b = scn.nextInt();
+                defineBigger(a, b);
+                break;
+            }
 
 
-
-
-
+        }
 
     }
 }
