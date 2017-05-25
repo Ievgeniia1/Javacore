@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by Ievgeniia on 3/28/2017.
  */
-public class MultiArray {
+public class MultiArrayClasswork {
     public void multiArray(){
         int [][] intArray = new int [2][3];
         for (int j=0;j<intArray.length;j++ ){
